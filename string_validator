@@ -1,6 +1,6 @@
 Task:
 
-You are given a string .
+You are given a string.
 Your task is to find out if the string  contains: alphanumeric characters, alphabetical characters, digits, lowercase and uppercase characters.
 
 Solve:
@@ -12,4 +12,8 @@ s = input()
     print(any(i.islower() for i in s))
     print(any(i.isupper() for i in s))
 
-  
+
+Steps Used in solving the problem -
+Step 1: First s will take input.
+Step 2: then we used “any” to check whether the given conditions are true or false. In this, 
+we also used five different functions to check different properties with a for loop.
