@@ -1,0 +1,22 @@
+# Problem:
+
+Write a Python code that takes user input and determines the data type of the input. 
+It should identify whether the input is an integer, float, string, or something else.
+
+#Solution:
+
+def data_type(user_input):
+    try:
+        value = int(user_input)
+        return "Integer"
+    except ValueError:
+        try:
+            value = float(user_input)
+            return "Float"
+        except ValueError:
+            return "String"
+        
+user_input = input("Enter your input:")
+
+type_of_input = data_type(user_input)
+print(f"The data type of {user_input} is:  {type_of_input}")
