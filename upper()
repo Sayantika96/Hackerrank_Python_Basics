@@ -1,1 +1,16 @@
-P
+# Problem:
+
+Write a Python code that takes a user's full name as input and prints their initials in uppercase. 
+For example, if the input is "Tom Cruise”, the program should output "TC."
+
+# Solution:
+
+full_name = input("Enter your name: ")
+name = full_name.split()
+
+initials = ""
+
+for i in name:
+    initials += i[0].upper()
+    
+print(initials)
