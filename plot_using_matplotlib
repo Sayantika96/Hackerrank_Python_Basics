@@ -1,0 +1,48 @@
+# Problem:
+
+Write a Python code to load any .CSV file into a Pandas data frame containing information about sales transactions (columns: Product, Quantity, Price, Date). 
+Clean the data by handling missing values. Then, plot the total sales over time using Matplotlib.
+
+# Solution:
+
+import  matplotlib.pyplot as plt
+
+def load_csv(data):
+    try:
+        df = pd.read_csv(data)
+        print("Data has been loaded.")
+        return df
+    except Exception as e:
+        print("Error occurred: {e}")
+        return None
+    
+def data_without_null(df):
+    if df.isnull().values.any():
+        df = df.dropna()
+        print("Missing value handled.")
+    else:
+        print("No missing value found.")
+        
+    return df
+
+
+df sales_over_time(df):
+    df['date'] = pd.to_datetime(df['date'])
+    
+    total_sales = df.groupby('date')['quantity'].sum()
+    
+    plt.figure(figsize = (10,6))
+    plt.bar(total_sales.index, total_sales.values)
+    plt.title('Total sales over time')
+    plt.xlabel('date')
+    plt.ylabel('Total sales')
+    plt.grid(True)
+    plt.show()
+    
+    
+data = ""
+sales_data = load_data(data)
+
+if sales_data is not None:
+    clean_data = data_without_null(sales_data)
+    sales_over_time(sales_data)
