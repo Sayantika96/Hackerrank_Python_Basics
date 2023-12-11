@@ -1,0 +1,17 @@
+# Problem:
+Write a Python code that asks the user to enter their name and then prints a greeting message that includes their name. 
+For example, if the user enters "Jordan", the program should print "Hello, Jordan!"
+
+# Solution:
+
+def get_user_input(name):
+     while True:
+        try:
+            user_input = str(input(name))
+            return user_input
+        except Exception as e:
+            print(f"Error: {e}")
+            print("Invalid input!!! Please try again.")
+        
+user_name = get_user_input("Enter your name: ")
+print(f"Hello!! {user_name}, good morning")
