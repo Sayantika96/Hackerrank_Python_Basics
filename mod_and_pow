@@ -1,0 +1,22 @@
+# Problem:
+
+Create a function in Python which accepts 2 numbers as an input from user. Perform the following operations:
+a. Modulus b. Power
+
+# Solution
+
+def get_user_input(number):
+    try:
+        user_input = int(input(number))
+        return user_input
+    except TypeError:
+        print("Invalid Input!!!")
+        
+number_1 = get_user_input("Enter first number: ")
+number_2 = get_user_input("Enter second number: ")
+
+mod_number = number_1 % number_2
+pow_number = pow(number_1, number_2)
+
+print(mod_number)
+print(pow_number)
