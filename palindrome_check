@@ -1,0 +1,13 @@
+# Problem:
+
+Write a Python code that accepts 2 strings from the user. Compare these 2 strings to find whether they are palindrome or not.
+
+# Solution:
+
+string_1 = input("Enter string 1: ")
+string_2 = input("Enter string 2: ")
+
+if(string_1 == string_2[::-1]):
+    print("They are Palindrome.")
+else:
+    print("They are not Palindrome.")
