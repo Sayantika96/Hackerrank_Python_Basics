@@ -1,0 +1,25 @@
+# Problem:
+
+Write a Python program to find whether a number is prime or not.
+
+Solution:
+
+def prime_num_check(number):
+    try:
+        user_input = int(input(number))
+        return user_input
+    except Exception as e:
+        print("Invalid error!!",{e})
+
+num = prime_num_check("Enter a number: ")
+
+if (num>1):
+    for i in range(2, int(num/2)):
+        if (num%2 == 0):
+            print(num, "is a Non-prime number")
+            break
+        else:
+            print(num, "is a prime number")
+            break
+else:
+    print(num, "is less than 0, and a Non-prime number")
