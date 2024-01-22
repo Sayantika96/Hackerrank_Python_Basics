@@ -1,4 +1,6 @@
-Problem : Write a program to accept a number from a user and calculate the sum of all numbers from 1 to a given number
+Problem: Write a program to accept a number from a user and calculate the sum of all numbers from 1 to a given number
+
+Solution: 
 
 user_input = int(input("Enter a valid number: "))
 s = 0
