@@ -1,3 +1,7 @@
+Problem:
+Implement a python program using map and lambda to perform element-wise exponentiation on two lists.
+
+Solution:
 list_1 = [1,2,3,4]
 list_2 = [2,3,4,5]
 
